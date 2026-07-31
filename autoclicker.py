@@ -1,12 +1,18 @@
+
+# nicht starten!!!
+
 import pyautogui
 import time
 
-
 is_active = True
-cps = float(input("How many clicks per secound?"))
+cps = float(input("How many clicks per second?"))
 time_per_click = 1/cps
 
-time.sleep(5)
+for i in range(5):
+    print(5-i)
+    i += 1
+    time.sleep(1)
+
 while is_active:
     x, y = pyautogui.position()
 
